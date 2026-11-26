@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nusantara Stats — Indonesia National Statistics Atlas</title>
+<meta name="description" content="Independent national statistics portal for Indonesia covering population, GDP, provinces, health, education, and employment with cited BPS and World Bank figures.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F5C5C'/%3E%3Crect x='6' y='18' width='5' height='8' rx='1' fill='%23F6F4EF'/%3E%3Crect x='13.5' y='12' width='5' height='14' rx='1' fill='%23E3A857'/%3E%3Crect x='21' y='7' width='5' height='19' rx='1' fill='%23D96B43'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/main.css">
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#app">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/" aria-label="Nusantara Stats home">
+      <svg class="brand-mark" viewBox="0 0 36 36" width="34" height="34" aria-hidden="true">
+        <rect width="36" height="36" rx="7" fill="#0F5C5C"/>
+        <path d="M5 24.5C9.5 22 13.5 22 18 24.5C22.5 27 26.5 27 31 24.5" stroke="#8CC4BE" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <rect x="8" y="16" width="4.5" height="6.5" rx="1" fill="#F6F4EF"/>
+        <rect x="15.75" y="11" width="4.5" height="11.5" rx="1" fill="#E3A857"/>
+        <rect x="23.5" y="7" width="4.5" height="15.5" rx="1" fill="#D96B43"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-title">Nusantara Stats</span>
+        <span class="brand-sub">Indonesia Statistical Atlas · 2015–2024</span>
+      </span>
+    </a>
+
+    <div class="header-tools">
+      <div class="search-wrap" role="search">
+        <label class="sr-only" for="global-search">Search indicators or provinces</label>
+        <input id="global-search" type="search" placeholder="Search indicators, provinces, sectors…" autocomplete="off">
+        <button id="search-clear" class="search-clear" type="button" hidden aria-label="Clear search">×</button>
+        <div id="search-results" class="search-dropdown" hidden role="listbox"></div>
+      </div>
+
+      <div class="header-selects">
+        <label class="select-chip" for="global-year">
+          <span>Year</span>
+          <select id="global-year" aria-label="Reference year"></select>
+        </label>
+        <label class="select-chip" for="global-province">
+          <span>Province</span>
+          <select id="global-province" aria-label="Focus province"></select>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <nav class="site-nav" aria-label="Statistical domains">
+    <div class="nav-inner" id="nav-links">
+      <a href="#/" data-route="overview">Overview</a>
+      <a href="#/population" data-route="population">Population</a>
+      <a href="#/economy" data-route="economy">Economy (GDP)</a>
+      <a href="#/provinces" data-route="provinces">Provinces</a>
+      <a href="#/health" data-route="health">Health</a>
+      <a href="#/education" data-route="education">Education</a>
+      <a href="#/employment" data-route="employment">Employment</a>
+    </div>
+  </nav>
+</header>
+
+<main id="app" class="main-shell" tabindex="-1"></main>
+
+<div id="chart-tooltip" class="chart-tooltip" hidden role="status" aria-live="polite"></div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>Nusantara Stats</strong> — Independent public statistical reference for the Republic of Indonesia.
+    </div>
+    <div class="footer-sources">
+      Primary sources: Statistics Indonesia (BPS — SUSENAS, SAKERNAS, National Accounts &amp; Census 2020), World Bank Open Data, Ministry of Health (SKI), and BPJS Kesehatan. Figures rounded transparently; every table and chart cites its source and reference year.
+    </div>
+  </div>
+</footer>
+</body>
+</html>

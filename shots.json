@@ -1,6 +1,6 @@
 [
-  { "file": "1-dashboard.jpg", "path": "#/", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "2-charts.jpg", "path": "#/provinces", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "3-phone.jpg", "path": "#/economy", "viewport": { "width": 390, "height": 844 } },
-  { "file": "4-health.jpg", "path": "#/health", "viewport": { "width": 1280, "height": 800 } }
+  { "file": "1-atlas-cover.jpg", "path": "?shot=atlas-cover&seed=1#/", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "2-compare-engine.jpg", "path": "?shot=compare-engine&seed=1#/compare?a=jakarta&b=east-kalimantan", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "3-turning-points.jpg", "path": "?shot=turning-points&seed=1#/turning-points?tp=export-boom", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "4-phone-economy.jpg", "path": "?shot=phone-economy&seed=1#/economy", "viewport": { "width": 390, "height": 844 } }
 ]
